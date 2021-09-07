@@ -1,43 +1,46 @@
-:root{
-    --maincolor:white;
-    --mainbackground:black;
-    --highlightedbackground:linear-gradient(180deg red black red);
+:root {
+    --maincolor: white;
+    --mainbackground: rgb(109, 109, 109);
+    --highlightedbackground: linear-gradient(180deg, var(--mainbackground), black, var(--mainbackground));
 
 }
-body{
-    padding:0;
-    margin:0;
+
+body {
+    padding: 0;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 
 /* HEADER */
-header{
-    background-image:url("header.jpg");
+header {
+    background-image: url("header.jpg");
     background-size: contain;
     text-align: center;
     position: relative;
 
 }
-H1{
+
+H1 {
     padding: 8%;
-    margin:0;
-    color:orange;
+    margin: 0;
+    color: orange;
     text-shadow: 4px 4px 4px black;
     position: relative;
     z-index: 100;
 }
-img{
+
+img {
     position: absolute;
-    top:0;
-    left:50%;
+    top: 0;
+    left: 50%;
     transform: translateX(-50%);
     width: 18%;
 }
 
 /* Menu */
-Nav{
-    background-color: var(--mainbackground);
+Nav {
+    background: var(--highlightedbackground);
     color: var(--maincolor);
     width: 100%;
     position: sticky;
@@ -45,128 +48,144 @@ Nav{
     padding: 15px;
     z-index: 100;
 }
-.buttons{
+
+.buttons {
     display: inline;
     position: absolute;
     right: 5vw;
     padding: 0;
     margin: 0;
-} 
-button{
-    background-color: var(--mainbackground);
+}
+
+button {
+    background-color: transparent;
     color: var(--maincolor);
-    margin:0px 20px;
+    margin: 0px 20px;
     border: none;
     font-size: 1rem;
     padding: 0;
 }
-ol{
+
+ol {
     padding: 0;
     display: inline;
-   
+
 }
-li{
+
+li {
     list-style-type: none;
-    padding:0 40px;
-    color:var(--maincolor);
+    padding: 0 40px;
+    color: var(--maincolor);
     display: inline;
     font-size: 1rem;
 }
 
 /* Main */
-Main{
+Main {
     width: 80%;
     margin: 15px auto;
 }
-article{
+
+article {
     background-color: rgb(231, 231, 231);
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
 }
-section{
+
+section {
     width: 100%;
     position: relative;
     text-align: justify;
 }
-.textspan{
+
+.textspan {
     display: block;
     width: 35%;
     padding: 0 2.5%;
     border-radius: 10px;
 }
-#firstArticle section:nth-child(even) .textspan{
+
+#firstArticle section:nth-child(even) .textspan {
     border: solid 2px orange;
     position: relative;
     left: 55%;
 }
-#firstArticle section:nth-child(odd) .textspan{
+
+#firstArticle section:nth-child(odd) .textspan {
     border: solid 2px rgb(107, 173, 218);
     position: relative;
     left: 5%;
 }
+
 /* The Dots */
-.dots{
+.dots {
     width: 20px;
     height: 20px;
     border-radius: 10px;
     background-color: rgb(107, 173, 218);
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 50;
 }
-#firstArticle section:nth-child(even) .dots{
+
+#firstArticle section:nth-child(even) .dots {
     background-color: orange;
-    left:50%;
+    left: 50%;
 }
+
 /* The Middle-line */
-#line{
+#line {
     height: 95%;
     background-color: rgb(182, 182, 182);
     width: 2px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top:2.5%;
+    top: 2.5%;
     z-index: 10;
 }
 
 /* Main Second Article */
-#secondArticle{
+#secondArticle {
     height: 280px;
     padding-top: 0;
 }
-#secondArticle section{
+
+#secondArticle section {
     width: 45%;
-    padding:10px
-    
+    padding: 10px
 }
-#secondArticle section:nth-child(1){
+
+#secondArticle section:nth-child(1) {
     background-color: orange;
-    position:relative;
+    position: relative;
 }
-#secondArticle section:nth-child(2){
+
+#secondArticle section:nth-child(2) {
     background-color: rgb(171, 233, 230);
-    position:absolute;
+    position: absolute;
     left: 25%;
     top: 10%;
 }
-#secondArticle section:nth-child(3){
+
+#secondArticle section:nth-child(3) {
     background-color: rgb(184, 154, 218);
-    position:absolute;
+    position: absolute;
     left: 50%;
-    top:20%;
+    top: 20%;
 }
-#secondArticle section:hover{
+
+#secondArticle section:hover {
     z-index: 80;
 }
 
 /* Footer */
-footer{
-    background-color: var(--mainbackground);
+footer {
+    background: var(--highlightedbackground);
     color: var(--maincolor);
     width: 100%;
     text-align: center;
@@ -174,24 +193,28 @@ footer{
     bottom: 0;
     z-index: 100;
 }
-#Homebutton{
+
+#Homebutton {
     position: absolute;
     right: 0px;
     top: 5px;
     background-color: rgb(252, 223, 196);
     color: orange;
-    border:orange solid 2px;
+    border: orange solid 2px;
     border-radius: 10px;
     height: 40px;
     font-size: 0.7rem;
     transition: transform 0.2s;
 }
-#Homebutton:hover{
-    transform:scale(1.2)
+
+#Homebutton:hover {
+    transform: scale(1.2)
 }
-li:hover{
+
+li:hover {
     color: grey;
 }
-button:hover{
+
+button:hover {
     color: grey;
 }

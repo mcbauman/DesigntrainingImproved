@@ -42,20 +42,23 @@ Nav{
     width: 100%;
     position: sticky;
     top: 0;
-    padding: 18px;
+    padding: 15px;
     z-index: 100;
 }
 .buttons{
     display: inline;
     position: absolute;
-    right: 10vw;
+    right: 5vw;
+    padding: 0;
+    margin: 0;
 } 
 button{
     background-color: var(--mainbackground);
     color: var(--maincolor);
-    margin:0 40px;
+    margin:0px 20px;
     border: none;
     font-size: 1rem;
+    padding: 0;
 }
 ol{
     padding: 0;
@@ -67,6 +70,7 @@ li{
     padding:0 40px;
     color:var(--maincolor);
     display: inline;
+    font-size: 1rem;
 }
 
 /* Main */
